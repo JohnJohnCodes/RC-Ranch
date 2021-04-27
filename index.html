@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="icon" type="image/jpg" href="/img/logos/logo-removebg.png">
 
 	<title>Ranch Demo</title>
 
@@ -17,7 +18,7 @@
 	<!--nav-->
 	<nav class="flex flex-wrap items-center justify-between px-4 py-8 uppercase text-md">
 		<div class="md:order-2 w-auto md:w-1/5 ">
-			<a class="text-xl font-semibold" href="/index.html">[LOGO]</a>
+			<img class="w-32 h-auto" src="/img/logos/logo-removebg.png"/>
 		</div>
 		<!--mobile menu-->
 		<div class="block md:hidden">
@@ -27,15 +28,9 @@
 				</svg>
 			</button>
 		</div>
-		<div class="navbar-menu hidden md:order-3 md:block w-full md:w-2/5 text-right">
+		<div class="navbar-menu hidden md:order-3 md:block w-full md:w-2/5 text-right md:text-md lg:text-2xl">
 			<a class="block md:inline-block mt-4 md:mt-0 mr-1 md:mr-4" href="/index.html#about">About</a>
 			<a class="block md:inline-block mt-4 md:mt-0 mr-1 md:mr-4" href="/index.html#products">Products</a>
-			<!--submenu-->
-			<div class="hidden absolute">
-				<a class="hover:block" href="#">Chicken</a>
-				<a class="hover:block" href="#">Pork</a>
-				<a class="hover:block" href="#">Lamb</a>
-			</div>
 			<a class="block md:inline-block mt-4 md:mt-0 mr-1 md:mr-4" href="/index.html#faqs">FAQ</a>
 			<a class="block md:inline-block mt-4 md:mt-0 mr-1 md:mr-4" href="/index.html#contact">Contact</a>
 		</div>
@@ -44,8 +39,8 @@
 	<!--hero-->
 	<div class="w-full h-screen relative flex items-center">
 		<img src="https://images.pexels.com/photos/841303/pexels-photo-841303.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="absolute top-0 left-0 w-full h-full object-cover" />
-		<span class="absolute top-0 right-0 mr-8 md:mr-12 mt-4 tracking-widest text-lg" id="google_translate_element"></span>
-		<!--<span class="absolute top-0 right-0 mr-8 md:mr-12 mt-4 tracking-widest text-lg"><a href="#">EN</a>/<a href="#">ES</a></span>-->
+		<!--<span class="absolute top-0 right-0 mr-8 md:mr-12 mt-4 tracking-widest text-lg" id="google_translate_element"></span>-->
+		<span class="absolute top-0 right-0 mr-8 md:mr-12 mt-4 tracking-widest text-lg"><a href="#">EN</a>/<a href="#">ES</a></span>
 		<div class="relative z-10 px-24 text-center">
 
 			<h2 class="mb-2 text-white uppercase text-2xl md:text-6xl leading-tight tracking-wide font-medium">The Ranch</h2>
@@ -83,7 +78,7 @@
 
 			<div class="w-full md:w-1/3 p-2 mb-1">
 				<a href="/lamb.html" class="block mb-3">
-					<img src="https://images.pexels.com/photos/6622955/pexels-photo-6622955.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="w-full h-64 object-cover hover:opacity-75" />
+					<img src="/img/lamb_close.jpg" alt="close up picture of lamb" class="w-full h-64 object-cover hover:opacity-75" />
 				<span class="block mt-4 text-base text-center text-2xl font-normal uppercase tracking-wider text-gray-700">Lamb</span></a>
 			</div>
 
@@ -91,17 +86,17 @@
 	</div>
 
 	<!-- customers -->
-	<section class="pt-8 text-center bg-gray-100">
+	<section class="pt-8 px-4 text-center bg-gray-100">
 
 		<div class="mx-auto mb-8">
-			<h2 class="text-4xl leading-relaxed mb-6">You can find out meat in the finest restaurants all over the Yucatan Penisula!</h2>
+			<h2 class="text-3xl leading-relaxed mb-6">You can find our meat in the finest restaurants all over the Yucatan Penisula!</h2>
 		</div>
 
 		<div class="flex flex-wrap items-center justify-around">
-			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img src="img/chipotle-mexican-grill.svg" alt=""></a></div>
-			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img src="img/friendly-s-restaurant.svg" alt=""></a></div>
-			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img src="img/ihop-3.svg" alt=""></a></div>
-			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img src="img/restaurant-adler.svg" alt=""></a></div>
+			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img class="h-24" src="img/chipotle-mexican-grill.svg" alt=""></a></div>
+			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img class="h-24" src="img/friendly-s-restaurant.svg" alt=""></a></div>
+			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img class="h-24" src="img/ihop-3.svg" alt=""></a></div>
+			<div class="w-1/4 md:w-1/12 px-8 md:px-0 mb-8"><a href="#"><img class="h-24" src="img/restaurant-adler.svg" alt=""></a></div>
 		</div>
 	</section>
 
@@ -255,7 +250,7 @@
 
 	<!-- footer -->
 	<div class="bg-black text-white text-center text-sm px-12 py-8">
-		<p>&copy; [LOGO] 2021 - All Rights Reserved. | Designed by <a href="https://johnathancodes.netlify.app/">JohnathanCodes</a></p>
+		<p>&copy; Rancho Chable 2021 - All Rights Reserved. | Designed by <a href="https://johnathancodes.netlify.app/">JohnathanCodes</a></p>
 	</div>
 
 	<!-- Template Main JS File -->
