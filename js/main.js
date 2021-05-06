@@ -18,3 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
+
+//Jump to Top//
+var btnTop = document.querySelector('#topBtn');
+var btnReveal = function () {
+  if (window.scrollY > 850) {
+    btnTop.classList.remove('hidden');
+  } else {
+    btnTop.classList.add('hidden');
+  }
+}
+var TopscrollTo = function () {
+  if(window.scrollY!=0) {
+    setTimeout(function() {
+      window.scrollTo(0,window.scrollY-30);
+      TopscrollTo();
+    }, 5);
+  }
+}
+window.addEventListener('scroll', btnReveal);
+btnTop.addEventListener('click', TopscrollTo);
